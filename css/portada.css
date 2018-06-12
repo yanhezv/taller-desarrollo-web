@@ -1,0 +1,95 @@
+.portada {
+    background-image: url("../img/FondoFestIS.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+}
+.portada > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+}
+.portada > div h1 {
+    font-family: bebas_neue;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+}
+.portada > div p {
+    color: #94defc;
+    text-align: center;
+}
+.portada .botones {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.portada .botones a {
+    height: 40px;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    transition: all ease-out .3s
+}
+.portada .botones a.trabajos {
+    color: #94defc;
+    border-color: #94defc;
+    margin-bottom: 25px;
+}
+.portada .botones a.tutoriales {
+    background: #ff6b23;
+}
+.portada .botones a.trabajos:hover {
+    color: #0094b2;
+    border-color: #0094b2;
+}
+.portada .botones a.tutoriales:hover {
+    background: #0094b2;
+}
+
+@media only screen and (min-width: 480px) {
+    .portada > div h1 {
+        font-size: 64px;
+    }
+    .portada > div p {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .portada > div h1 {
+        font-size: 70px;
+        font-family: inherit;
+    }
+    .portada > div p {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .portada > div h1 {
+        font-size: 80px;
+    }
+    .portada > div p {
+        font-size: 24px;
+    }
+    .portada .botones {
+        flex-direction: row;
+    }
+    .portada .botones a.trabajos {
+        margin-bottom: 0;
+        margin-right: 20px;
+    }
+}

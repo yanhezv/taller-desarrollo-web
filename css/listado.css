@@ -1,0 +1,58 @@
+.listado {
+    display: flex;
+    flex-wrap: wrap;
+}
+.listado .tarjeta {
+    width: 100%;
+    margin-bottom: 15px;
+}
+.listado .tarjeta header {
+    background: #0094b2;
+    display: flex;
+    align-items: center;
+}
+.listado .tarjeta header .title {
+    color: white;
+    font-size: 18px;
+    padding: 5px 5px 5px 15px;
+    width: calc(100% - 80px);
+}
+.listado .tarjeta header .title span::after {
+    content: "."
+}
+.listado .tarjeta header .title h1{
+    display: inline;
+    font-weight: normal;
+    font-size: 18px;
+}
+.listado .tarjeta header .opciones {
+    display: flex;
+    font-size: 0;
+    width: 80px;
+}
+.listado .tarjeta header .opciones a:hover {
+    background: rgba(0,0,0,0.1);
+}
+.listado .tarjeta .descripcion {
+    background: #cef0fe;
+    padding: 10px 15px;
+    min-height: 120px;
+}
+@media only screen and (min-width: 520px) and (max-width: 767px) {
+    .listado .tarjeta {
+        margin: 0 20px 20px 0;
+        width: calc(50% - 10px);
+    }
+    .listado .tarjeta:nth-child(2n) {
+        margin-right: 0;
+    }
+}
+@media only screen and (min-width: 960px) {
+    .listado .tarjeta {
+        margin: 0 20px 20px 0;
+        width: calc(50% - 10px);
+    }
+    .listado .tarjeta:nth-child(2n) {
+        margin-right: 0;
+    }
+}

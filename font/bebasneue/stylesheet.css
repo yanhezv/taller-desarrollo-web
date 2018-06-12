@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'bebas_neue';
+    src: url('bebasneue.eot');
+    src: url('bebasneue.eot?#iefix') format('embedded-opentype'),
+         url('bebasneue.woff2') format('woff2'),
+         url('bebasneue.woff') format('woff'),
+         url('bebasneue.ttf') format('truetype'),
+         url('bebasneue.svg#bebas_neue') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

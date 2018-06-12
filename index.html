@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Desarrollo web</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body>
+        <header class="menu">
+            <nav>
+                <div class="logo">
+                    <a href="#">
+                        <img src="img/Logo.png" alt="Logo">
+                    </a>
+                </div>
+                <div class="navegacion">
+                    <ul class="opciones">
+                        <li><a href="#" class="selected">HTML</a></li>
+                        <li><a href="#">CSS</a></li>
+                        <li><a href="#">JAVASCRIPT</a></li>
+                        <li><a href="#">VIDEOS</a></li>
+                    </ul>
+                    <div class="buscador">
+                        <div class="input">
+                            <input
+                                type        = "text"
+                                name        = "search"
+                                id          = "buscador"
+                                placeholder = "Buscar cursos"
+                            >
+                        </div>
+                        <label for="buscador">
+                            <img src="img/LupaAzul.png" alt="Icono de lupita">
+                        </label>
+                    </div>
+                </div>
+                <div class="icono_menu">
+                    <a href="javascript:;" class="icono">
+                        <i></i>
+                    </a>
+                </div>
+            </nav>
+        </header>
+        <section class="portada">
+            <div>
+                <h1>Desarrollo Web</h1>
+                <p>Aprendiendo HTML, CSS y Javascript</p>
+                <div class="botones">
+                    <a href="#" class="trabajos">Ver nuestro trabajo</a>
+                    <a href="#" class="tutoriales">Ver tutoriales</a>
+                </div>
+            </div>
+        </section>
+        <main class="cursos">
+            <section>
+                <header class="header">
+                    <h1>Nuevo <strong>Curso</strong></h1>
+                </header>
+                <form class="formulario" action="index.html" method="get">
+                    <div class="entrada">
+                        <label for="nombre">Nombre del curso</label>
+                        <input
+                            type        = "text"
+                            name        = "course_name"
+                            id          = "nombre"
+                            placeholder = "Ingrese un nuevo curso."
+                        >
+                    </div>
+                    <div class="entrada">
+                        <label for="descripcion">Descripción</label>
+                        <textarea
+                            name        = "course_description"
+                            id          = "descripcion"
+                            placeholder = "No mayor a 140 carácteres."
+                        ></textarea>
+                    </div>
+                    <div class="acciones">
+                        <button type="submit">Guardar</button>
+                    </div>
+                </form>
+            </section>
+            <section>
+                <header class="header">
+                    <h1>Cursos <strong>Disponibles</strong></h1>
+                </header>
+                <div class="listado">
+                    <article class="tarjeta">
+                        <header>
+                            <div class="title">
+                                <span>1</span>
+                                <h1>HTML desde cero</h1>
+                            </div>
+                            <div class="opciones">
+                                <a href="javascript:;" class="editar" data-id="1">
+                                    <img src="img/EditarBlanco.png" alt="Icono">
+                                </a>
+                                <a href="javascript:;" class="eliminar" data-id="1">
+                                    <img src="img/EliminarBlanco.png" alt="Icono">
+                                </a>
+                            </div>
+                        </header>
+                        <div class="descripcion">
+                            <p>Curso resumido para conocer el lenguaje de marcado empleado por nuestros navegadores.</p>
+                        </div>
+                    </article>
+                    <article class="tarjeta">
+                        <header>
+                            <div class="title">
+                                <span>2</span>
+                                <h1>Git</h1>
+                            </div>
+                            <div class="opciones">
+                                <a href="javascript:;" class="editar" data-id="2">
+                                    <img src="img/EditarBlanco.png" alt="Icono">
+                                </a>
+                                <a href="javascript:;" class="eliminar" data-id="2">
+                                    <img src="img/EliminarBlanco.png" alt="Icono">
+                                </a>
+                            </div>
+                        </header>
+                        <div class="descripcion">
+                            <p>Es un software de control de versiones.</p>
+                        </div>
+                    </article>
+                    <article class="tarjeta">
+                        <header>
+                            <div class="title">
+                                <span>3</span>
+                                <h1>Diseño gráfico</h1>
+                            </div>
+                            <div class="opciones">
+                                <a href="javascript:;" class="editar" data-id="3">
+                                    <img src="img/EditarBlanco.png" alt="Icono">
+                                </a>
+                                <a href="javascript:;" class="eliminar" data-id="3">
+                                    <img src="img/EliminarBlanco.png" alt="Icono">
+                                </a>
+                            </div>
+                        </header>
+                        <div class="descripcion">
+                            <p>Aprende con nosotros herramientas que te facilitarán expresar tu ideas gráficas.</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+        <script src="js/animacion.js" charset="utf-8"></script>
+        <script src="js/jquery.js" charset="utf-8"></script>
+        <script src="js/cursos.js" charset="utf-8"></script>
+    </body>
+</html>
